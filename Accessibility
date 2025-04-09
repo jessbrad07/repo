@@ -1,0 +1,16 @@
+public static class Values
+{
+    public static bool IsLoggedIn { get; set; } = false;
+    public static int a { get; set; } = 1;
+    public static int b { get; set; } = 1;
+    public static int c { get; set; } = 1;
+
+}
+
+if (Values.IsLoggedIn == false)
+{
+    Form2 form = new Form2();
+    Values.IsLoggedIn = true;
+    form.Show();
+}
+
